@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw;
+    height: 10vh;
+    box-shadow: .2px .2px 2px rgb(67, 61, 61);
+    background-color:   #2b2622;
+
+
+}
+
+nav p{
+    margin-left: 5rem;
+    font-family: "Dancing Script";
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 800;
+    color: white;
+
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+  }
+
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+}
+
+form{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+
+form input{
+    padding: 1.2rem;
+    margin: 1rem 0 0 0;
+    border-radius: 2rem;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 1rem;
+
+}
+
+
+form button{
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'roboto';
+    background-color:   #2b2622;
+    color: white
+
+}
+
+form button:hover{
+    background-color: rgb(138, 88, 88);
+    transition: background-color .5s ease;
+}
+
+form button:active{
+    background-color: black;
+    color: white;
+}
+
+.form-container{
+    margin: auto auto;
+    padding: 3rem 2rem 4rem 2rem;
+    border-radius: 2rem;
+    box-shadow: .1px .1px 5px rgb(155, 151, 151);
+}
+
+.form-container:first-child{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    font-weight: 1;
+
+}
+
+.form-container p:nth-child(2){
+    text-align: center;
+    font-size: 1rem;
+    margin: .5rem 0 2rem 0;
+    font-family: 'Roboto';
+    font-weight: 1;
+
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--primary-color);
+    box-shadow: .2px .2px 2px var(--secondary-color);
+    background-color:   #2b2622;
+
+}
+
+body{
+    overflow-x: hidden;
+}
