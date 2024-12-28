@@ -26,7 +26,7 @@ document.getElementById('Submit').addEventListener('click',async function (e){
         const p = document.getElementById('Success')
         p.textContent = "Successfully Signed Up, Redirecting...."
         await new Promise(resolve => setTimeout(resolve, 1000))
-        window.location.href = '/hello.html';
+        window.location.href = `u/${formObject['Name']}`;
     }else{
         console.log(result)
     }
