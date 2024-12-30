@@ -1,6 +1,7 @@
 const exp = require('constants');
 const express = require('express')
 const fs = require('fs');
+const path = require('path')
 
 const signupRouter = require('./routes/signup')
 const username = require('./routes/users.js')
@@ -22,6 +23,9 @@ app.use(express.static("public"))
 app.use('/signup', signupRouter)
 app.use('/u', username)
 
+app.get('/login', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'public', 'login.html'))
+})
 
 
 app.listen(5000, ()=>{
